@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+/* .dark class'ı üzerinden tema anahtarı */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Renk paleti ---------- */
+:root {
+  color-scheme: light;
+
+  --paper: #e8e7e3;
+  --ink: #17171b;
+  --ink-soft: #4d4d55;
+  --mute: #87878f;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --paper: #0d0d10;
+  --ink: #edebe6;
+  --ink-soft: #a4a4ae;
+  --mute: #74747f;
+}
+
+/* ---------- Tailwind eşlemeleri ---------- */
+@theme inline {
+  --font-sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, 'SFMono-Regular', monospace;
+
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-mute: var(--mute);
+  --color-hair: color-mix(in oklab, var(--ink) 13%, transparent);
+  --color-hair-strong: color-mix(in oklab, var(--ink) 24%, transparent);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--paper);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv01';
+    overscroll-behavior-y: none;
+    transition:
+      background-color 0.4s var(--ease-out-expo),
+      color 0.4s var(--ease-out-expo);
+  }
+
+  ::selection {
+    background-color: var(--ink);
+    color: var(--paper);
+  }
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ince scrollbar */
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--ink) 18%, transparent);
+    border: 3px solid var(--paper);
+    border-radius: 99px;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

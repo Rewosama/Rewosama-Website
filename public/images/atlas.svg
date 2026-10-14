@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1290" height="1000" viewBox="0 0 1290 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5f91"/>
+      <stop offset="1" stop-color="#101c2e"/>
+    </linearGradient>
+    <pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse">
+      <circle cx="22" cy="22" r="3" fill="#ffffff" fill-opacity="0.10"/>
+    </pattern>
+  </defs>
+  <rect width="1290" height="1000" fill="url(#g)"/>
+  <rect width="1290" height="1000" fill="url(#dots)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="3">
+    <rect x="34" y="34" width="1222" height="932" rx="10"/>
+  </g>
+  <g text-anchor="middle" font-family="Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="645" y="470" font-size="120" font-weight="700" fill-opacity="0.92">A</text>
+    <text x="645" y="560" font-size="34" letter-spacing="6" fill-opacity="0.55">GÖRSEL EKLE</text>
+  </g>
+  <text x="645" y="660" text-anchor="middle" font-family="Menlo, monospace" font-size="26" fill="#ffffff" fill-opacity="0.45">atlas.jpg</text>
+</svg>

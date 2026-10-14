@@ -1,0 +1,413 @@
+{
+  "site": {
+    "name": "Rewosama",
+    "fullName": "Rewosama",
+    "handle": "rewosama",
+    "title": "Designer & Developer",
+    "city": "Istanbul",
+    "location": "Istanbul, Türkiye",
+    "email": "hey@rewosama.com",
+    "socials": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com"
+      },
+      {
+        "label": "X",
+        "href": "https://x.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      },
+      {
+        "label": "Read.cv",
+        "href": "https://read.cv"
+      }
+    ]
+  },
+  "about": [
+    {
+      "heading": "Start",
+      "body": [
+        "I studied industrial design, then switched to software. Standing between the two did me a lot of good: I get to turn thinking about form into code at the same time.",
+        "These days I mostly work on interface design, design systems, and interactive experiments I build with Three.js."
+      ]
+    },
+    {
+      "heading": "The work",
+      "body": [
+        "I like carrying an idea from its first rough sketch all the way to a working interface on my own: the idea, the design, the prototype, and finally the real code.",
+        "I like thinking of everything I write as a box — simple, tidy, and easy to build on top of."
+      ]
+    },
+    {
+      "heading": "Off the clock",
+      "body": [
+        "I play around with type, collect old game cartridges, and write small programs for no reason at all."
+      ]
+    }
+  ],
+  "cassettes": [
+    {
+      "id": "arc",
+      "featured": true,
+      "name": "Arc Browser",
+      "role": "Lead Product Designer",
+      "years": "2023–2026",
+      "location": "SF",
+      "shell": "#1c1c1f",
+      "label": "#d8b23f",
+      "image": "/images/arc.svg",
+      "art": "scan",
+      "summary": "Tabs, spaces and the command palette, reconsidered. Took it from zero to product with a team of 40+.",
+      "tags": [
+        "Design system",
+        "Prototyping",
+        "Web platform"
+      ],
+      "link": "https://arc.net",
+      "detail": {
+        "lede": "Tarayıcıda yüzlerce sekmeyi yönetilebilir bir yüzeye indirdik. Sıfırdan bir ürün: tasarım sistemi, komut paleti ve ilk sürüm.",
+        "description": [
+          "Arc Browser'ı sıfırdan kurduk. Mevcut tarayıcıların aksine sekmeyi bir liste olmaktan çıkarıp yaşayan bir çalışma alanına dönüştürmek ana fikirdi.",
+          "İlk yılın büyük bölümü tasarım sistemine gitti. Bileşenlerin çoğu ortak bir token katmanından besleniyor; iki farklı ekip aynı işi yaptığında çıktılar birbirine yaklaşıyor. Komut paleti bu yüzden her sürümde yeniden yazılmadı, sadece yeni eylemler eklendi."
+        ],
+        "features": [
+          "Alan (space) tabanlı gezinme — her eylem bir alana ait",
+          "Tek kısayolla açılan komut paleti, arama ile filtreleme",
+          "Sekmeler arası geçişte bağlam korunuyor, yazarken geri dönülüyor",
+          "Yerleşik ekran okuyucu desteği, tüm eylemler klavyeye bağlı",
+          "180 bileşenlik tasarım sistemi, tek token kaynağı"
+        ],
+        "stack": [
+          "TypeScript",
+          "React",
+          "Rust",
+          "WebGL"
+        ],
+        "repo": "https://github.com/company/arc",
+        "demo": "https://arc.net"
+      }
+    },
+    {
+      "id": "lumen",
+      "featured": true,
+      "name": "Lumen",
+      "role": "Product Designer",
+      "years": "2022–2025",
+      "location": "NYC",
+      "shell": "#232322",
+      "label": "#c2562c",
+      "image": "/images/lumen.svg",
+      "art": "beam",
+      "summary": "Real-time portfolio analysis for open markets. A study in calming down data-dense interfaces.",
+      "tags": [
+        "Data visualisation",
+        "Finance",
+        "iOS"
+      ],
+      "link": "https://example.com",
+      "detail": {
+        "lede": "Serbest piyasalar için gerçek zamanlı portföy analizi. Veri yoğun arayüzleri sakinleştirmek üzerine iki yıl.",
+        "description": [
+          "Lumen, borsa verisini günlük bir panoya çeviren bir uygulama. Zor tarafı veri taşımak değil, onu okunur kılmaktı: kullanıcı önce ne olduğunu görmeli, sonra ne yapacağına karar vermeli.",
+          "Bu yüzden her ekranı tek bir soru üzerine kurduk. Portföyün durumu ne, risk nerede, fırsat nerede? Grafik süsleme olarak kaldırıldı; renk yalnızca anlam taşıyor."
+        ],
+        "features": [
+          "Canlı portföy takibi, 1 dakikalık gecikmeyle",
+          "Varlık bazlı kâr/zarar dökümü ve geçmiş karşılaştırma",
+          "Risk göstergesi — volatilitek ve yoğunlaşma tek ekranda",
+          "Uyarılar: fiyat hareketi, hedef, üst üste toplam kayıp",
+          "Web ve iOS, aynı veri katmanı üzerinden"
+        ],
+        "stack": [
+          "React",
+          "D3",
+          "TypeScript",
+          "Swift"
+        ],
+        "repo": "https://github.com/company/lumen"
+      }
+    },
+    {
+      "id": "atlas",
+      "featured": true,
+      "name": "Atlas OS",
+      "role": "Design Engineer",
+      "years": "2021–2024",
+      "location": "Berlin",
+      "shell": "#20242c",
+      "label": "#2f5f91",
+      "image": "/images/atlas.svg",
+      "art": "dots",
+      "summary": "A touch interface library for embedded systems. 120 components, one design language, zero dependencies.",
+      "tags": [
+        "Design engineering",
+        "Component library",
+        "Touch"
+      ],
+      "link": "https://example.com",
+      "detail": {
+        "lede": "Gömülü sistemler için dokunmatik arayüz kütüphanesi. 120 bileşen, tek tasarım dili, sıfır bağımlılık.",
+        "description": [
+          "Atlas OS, cihaz üreticilerine dokunmatik arayüz kurmak için bir kütüphane. Sorun tasarım değil, tutarlılıktı: her ekip kendi bileşenlerini yazıyor ve aynı iş iki farklı biçimde çıkıyordu.",
+          "Çözüm katmanları ayırmak oldu. Token'lar çip ekibiyle ortak yazıldı, bileşenler yalnızca onları tüketti. Böylece yeni bir cihaz başlatmak yeni bileşen yazmak değil, mevcut olanları doğru boyutlandırmak oldu."
+        ],
+        "features": [
+          "120 bileşen, tek tasarım dili, sıfır runtime bağımlılığı",
+          "Token katmanı Figma'dan otomatik üretiliyor, elle güncellenmiyor",
+          "Dokunma hedefleri ve kontrast değerleri WCAG'a göre sınırlandırılmış",
+          "Serbest boyutlandırma — sabit piksel değil, dp/birim bazlı",
+          "Jest ile yazılan bileşen testleri, CI'da çalışıyor"
+        ],
+        "stack": [
+          "TypeScript",
+          "React",
+          "Style Dictionary",
+          "Jest"
+        ],
+        "repo": "https://github.com/atlas-os/ui",
+        "demo": "https://atlas-ui.dev"
+      }
+    },
+    {
+      "id": "paper",
+      "featured": false,
+      "name": "Paper",
+      "role": "Founder",
+      "years": "2020–2023",
+      "location": "Istanbul",
+      "shell": "#1d2420",
+      "label": "#4c7d59",
+      "image": "/images/paper.svg",
+      "art": "scan",
+      "summary": "My own Notion clone. Still used by 10,000 people a month, and fully open source.",
+      "tags": [
+        "Indie developer",
+        "Open source",
+        "Databases"
+      ],
+      "link": "https://github.com",
+      "detail": {
+        "lede": "Kendi Notion klonum. Hâlâ ayda 10.000 kişi kullanıyor ve tamamen açık kaynak.",
+        "description": [
+          "Paper, Notion'un ihtiyaçları karşılamadığı küçük ekipler için yazılmış bir blok tabanlı düzenleyici. Sunucu tarafında neredeyse hiçbir şey yok: veri kullanıcının kendi cihazında duruyor, çalışması için internet bile gerekmiyor.",
+          "İki yıl sonunda bile veri modelini değiştirmedim. Yeni özelliklerin hepsi blok üzerinden çözüldü; bu da geriye dönük uyumluluk derdi hiç doğmadı."
+        ],
+        "features": [
+          "Blok tabanlı düzenleyici — metin, liste, kod, tablo, gömü içerik",
+          "Yerel öncelikli depolama, çevrimdışı tam çalışma",
+          "Manuel senkronizasyon — cihazlar arası, çakışma çözümlemeli",
+          "Kendi kimlik doğrulaması, üçüncü parti SDK yok",
+          "Tamamen açık kaynak, topluluk katkılı"
+        ],
+        "stack": [
+          "TypeScript",
+          "React",
+          "tRPC",
+          "SQLite"
+        ],
+        "repo": "https://github.com/company/paper",
+        "demo": "https://paper.example.com"
+      }
+    },
+    {
+      "id": "riso",
+      "featured": false,
+      "name": "Riso",
+      "role": "Side Project",
+      "years": "2019–2022",
+      "location": "Istanbul",
+      "shell": "#241f26",
+      "label": "#6f5a8c",
+      "image": "/images/riso.svg",
+      "art": "dots",
+      "summary": "A pixel art editor that runs in the browser. My most used and least profitable project.",
+      "tags": [
+        "Canvas",
+        "WebGL",
+        "Side project"
+      ],
+      "link": "https://example.com",
+      "detail": {
+        "lede": "Tarayıcıda çalışan bir piksel sanat editörü. En çok kullanılan, en az kazandıran proje.",
+        "description": [
+          "Riso, 32×32 bir resim için Photoshop açmayı gereksiz kılmak için yazıldı. Kurallar baştan sabit: sabit palet, kare fırça, ızgaraya kilitli piksel. Belirsizlik yok, sürpriz yok.",
+          "En çok düşündüğüm kısım performanstı. Çizim tamamen bir Web Worker'da; 512×512 bir tuvale çizerken arayüz hâlâ akıcı kalıyor. Kaydetme de otomatik, IndexedDB'ye her otuz saniyede."
+        ],
+        "features": [
+          "Sabit 32 renklik palet, panoda kayan",
+          "Kalem, çizgi, doldurma, dikdörtgen, silgi",
+          "Izgara ve piksel hizalama, serbest modda kapatılabilir",
+          "90+ klavye kısayolu, fare tamamen opsiyonel",
+          "Otomatik kayıt, katman desteği, PNG dışa aktarma"
+        ],
+        "stack": [
+          "TypeScript",
+          "Canvas",
+          "Web Workers",
+          "IndexedDB"
+        ],
+        "repo": "https://github.com/company/riso",
+        "demo": "https://riso.example.com"
+      }
+    }
+  ],
+  "funList": [
+    {
+      "title": "UnicodeKit",
+      "note": "Hunting down glyphs like 1988",
+      "href": "https://example.com"
+    },
+    {
+      "title": "Stray characters",
+      "note": "Typography everywhere",
+      "href": "https://example.com"
+    },
+    {
+      "title": "Papercups",
+      "note": "My favourite modular objects",
+      "href": "https://example.com"
+    },
+    {
+      "title": "Cassette Ripper",
+      "note": "Digitising old game sounds",
+      "href": "https://example.com"
+    }
+  ],
+  "feed": [
+    {
+      "title": "A little character",
+      "meta": "Oct 2026",
+      "href": "https://example.com"
+    },
+    {
+      "title": "The flaw",
+      "meta": "Sep 2026",
+      "href": "https://example.com"
+    },
+    {
+      "title": "Optional emptiness",
+      "meta": "2025",
+      "href": "https://example.com"
+    },
+    {
+      "title": "What I'm reading now",
+      "meta": "2025",
+      "href": "https://example.com"
+    }
+  ],
+  "ui": {
+    "switchTo": "Switch to Turkish",
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "home": {
+      "headline": "**Rewosama** — from **Istanbul**, I keep design and code together in one **cartridge**.",
+      "ctaPrimary": "Selected work",
+      "ctaSecondary": "Contact",
+      "availability": "Open to new projects",
+      "sceneCaption": "Home Arcade · Model 1977",
+      "aboutHeading": "About",
+      "selectedHeading": "Selected work",
+      "all": "All ({count})",
+      "skillsHeading": "Capabilities",
+      "funHeading": "For fun",
+      "feedHeading": "Writing",
+      "contactHeading": "Let's make something.",
+      "capabilities": [
+        [
+          "Product design",
+          "End-to-end flow, from research to the last pixel."
+        ],
+        [
+          "Design systems",
+          "Component libraries, token architecture, documentation."
+        ],
+        [
+          "Interactive interfaces",
+          "Three.js, WebGL, motion design and prototyping."
+        ],
+        [
+          "Front-end engineering",
+          "React, TypeScript, performance and accessibility."
+        ]
+      ],
+      "quickFacts": [
+        [
+          "Location",
+          "Istanbul, Türkiye"
+        ],
+        [
+          "Focus",
+          "Design + code"
+        ],
+        [
+          "Experience",
+          "8+ years"
+        ],
+        [
+          "Status",
+          "Open to new projects"
+        ]
+      ]
+    },
+    "projects": {
+      "kicker": "Projects",
+      "headline": "Everything in the **cartridge** drawer.",
+      "lead": "Every card is a real 3D cartridge. Move the pointer over it — it turns.",
+      "moreHeading": "Something else in mind?",
+      "cassetteUnit": "cassettes",
+      "contactHeading": "Shall we make something together?"
+    },
+    "footer": {
+      "pages": "Pages",
+      "else": "Else",
+      "builtWith": "Built with React · Tailwind · Three.js"
+    },
+    "theme": {
+      "toDark": "Switch to dark theme",
+      "toLight": "Switch to light theme",
+      "darkTitle": "Dark theme",
+      "lightTitle": "Light theme"
+    },
+    "link": {
+      "visit": "Visit"
+    },
+    "notFound": {
+      "code": "404",
+      "kicker": "No cartridge",
+      "title": "Nothing is loaded in this slot.",
+      "body": "The page you're after isn't in the drawer. It may have been renamed, or it never existed — in which case we invented it.",
+      "back": "Back home",
+      "projects": "See the projects",
+      "label": "Unknown game",
+      "sceneCaption": "Home Arcade · Slot empty"
+    },
+    "project": {
+      "back": "All projects",
+      "overview": "Overview",
+      "features": "Features",
+      "stack": "Stack",
+      "links": "Links",
+      "repo": "Source code",
+      "demo": "Live demo",
+      "credits": "Areas"
+    },
+    "contact": {
+      "kicker": "Contact",
+      "headline": "Let's make something **worth keeping**.",
+      "lead": "A product, a system, an experiment — whatever it is, I like hearing about it first. I answer everything, usually within a day.",
+      "emailLabel": "Email",
+      "emailNote": "The shortest route. No forms, no newsletter.",
+      "elsewhere": "Elsewhere",
+      "elsewhereNote": "DMs are open too — whichever is easier for you.",
+      "availability": "Open to new projects",
+      "responseTime": "Usually replies within a day",
+      "basedIn": "Based in {location}"
+    }
+  }
+}

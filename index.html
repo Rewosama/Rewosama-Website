@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#e8e7e3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d0d10" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewosama — Designer &amp; Developer</title>
+    <meta
+      name="description"
+      content="A product designer working across design and code. Selected work, experiments and notes."
+    />
+
+    <!-- Paylaşım görseli: build sırasında scripts/generate-og.tsx ile üretilir
+         (npm run og). dist/og.png olarak sunulur, yani /og.png adresinde. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rewosama.vercel.app/" />
+    <meta property="og:site_name" content="Rewosama" />
+    <meta property="og:title" content="Rewosama — Designer &amp; Developer" />
+    <meta
+      property="og:description"
+      content="A product designer working across design and code. Selected work, experiments and notes."
+    />
+    <meta property="og:image" content="https://rewosama.vercel.app/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Rewosama — from Istanbul, I keep design and code together in one cartridge."
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rewosama — Designer &amp; Developer" />
+    <meta
+      name="twitter:description"
+      content="A product designer working across design and code. Selected work, experiments and notes."
+    />
+    <meta name="twitter:image" content="https://rewosama.vercel.app/og.png" />
+    <script>
+      // Sayfa boyanmadan önce tema ve dil uygulanır (flash olmasın)
+      ;(() => {
+        try {
+          const theme = localStorage.getItem('rewosama-theme')
+          document.documentElement.classList.toggle(
+            'dark',
+            theme ? theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches,
+          )
+
+          const locale = localStorage.getItem('rewosama-locale')
+          document.documentElement.lang = locale === 'tr' ? 'tr' : 'en'
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
